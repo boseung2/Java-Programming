@@ -15,7 +15,7 @@ public class CollectionsEx {
             else {
                 separator = "\n";
             }
-            System.out.println(e+separator);
+            System.out.print(e+separator);
         }
 
     }
@@ -30,6 +30,8 @@ public class CollectionsEx {
 
         Collections.sort(myList);
         printList(myList);
+        System.out.println(myList); //myList객체를 프린트하면 []안에 표시되지만 원하는 형식을 맞추려면 toString클래스를 오버라이딩 하거나 다시 매소드를 만들어야할 것 같다
+                                    //근데 굳이 toString하기보단 형식이 다른만큼 예제처럼 다시 만드는것도 나쁘지 않은듯.
 
         Collections.reverse(myList);
         printList(myList);
